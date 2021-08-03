@@ -4,54 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Log In Page</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Hello,Welcome back</h1>
-      </header>
+    <header>Hello, <br />Welcome back.</header>
 
-      <form>
-        <div class="form-group">
-          <input
-            class="input"
-            type="text"
-            placeholder="Username or email"
-            required
-          />
-        </div>
+    <form>
+      <div class="name-form">
+        <label for="name"></label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Username or email"
+          required
+        />
+      </div>
 
-        <div>
-          <input
-            class="input-form"
-            type="text"
-            placeholder="password"
-            required
-          />
-        </div>
+      <div class="password-form">
+        <label for="password"></label>
+        <input type="text" name="password" placeholder="Password" required />
+      </div>
+    </form>
 
-        <div class="checkboxes">
-          <div class="box-1">
-            <input
-              type="checkbox"
-              id="checkbox"
-              name="profile"
-              value="profile"
-            />
-            Remember me
-          </div>
+    <section>
+      <div>
+        <input type="checkbox" />
+        <label for="text"><a href="#">Remember me</a></label>
+      </div>
 
-          <div>
-              <p>Forgot Password?</p>
-          </div>
-        </div>
+      <div>
+        <p><a href="#">Forgot Password</a></p>
+      </div>
+    </section>
 
-        <button>Login</button>
-        <div>
-            <P>Dont have an account?<a href="#">Click here</a></P>
-        </div>
-      </form>
-    </div>
+    <section>
+      <button>Login</button>
+    </section>
+
+    <section>
+      <p>Dont have an account?<a href="#">Click here</a></p>
+    </section>
   </body>
 </html>
